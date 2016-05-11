@@ -1,0 +1,22 @@
+{
+  "name": "fonts-getter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "download": "^4.4.3",
+    "find-remove": "^0.2.11",
+    "fontfacegen": "^0.1.8",
+    "fs-extra": "^0.30.0",
+    "node-font-face-generator": "^0.1.5",
+    "request": "^2.72.0",
+    "rimraf": "^2.5.2",
+    "ttf2woff2": "^2.0.3"
+  }
+}
