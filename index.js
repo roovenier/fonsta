@@ -4,6 +4,14 @@ var fs = require('fs-extra');
 var path = require('path');
 var css_generator = require("node-font-face-generator");
 var findRemoveSync = require('find-remove');
+var mkdirp = require('mkdirp');
+var rimraf = require('rimraf');
+
+var config = require('./fontsta');
+config.tmpDir = config.tmpDir || './tmp/fonts';
+config.fontsDir = config.fontsDir || './assets/fonts';
+config.cssDir = config.cssDir || './assets/css';
+config.cssFile = config.cssFile || 'fonts.css';
 
 var fontNameArg = process.argv.slice(3)[0];
 var fontNameRaw = fontNameArg.split(':')[0];
@@ -40,16 +48,17 @@ if(fontNameRaw) {
 				var fontName = toTitleCase(fontNameRaw.split(/[-_]+/).join(' '));
 				new Download({mode: '755', extract: true})
 					.get('http://www.fontsquirrel.com/fontfacekit/' + fontNameRaw)
-					.dest('tmp/' + fontName)
+					.dest(config.tmpDir + '/' + fontName)
 					.run(function(err, files) {
-						var dirs = getDirectories('tmp/' + fontName + '/web fonts');
+						var dirs = getDirectories(config.tmpDir + '/' + fontName + '/web fonts');
+						console.log(dirs);
 						var fontNameSlug = fontNameRaw.replace(/[^\w\s]/gi, '');
 						dirs.map(function(item) {
 							fontTypes.map(function(fontTypeItem) {
 								if(item.indexOf(fontNameSlug + '_' + fontTypeItem + '_') > -1) {
 									var fontType = toTitleCase(item.split('_').slice(0, -1).join(' '));
-									var targetPath = 'fonts/' + fontName + '/' + fontType;
-									fs.move('tmp/' + fontName + '/web fonts/' + item, targetPath, function (err) {
+									var targetPath = config.fontsDir + '/' + fontName + '/' + fontType;
+									fs.move(config.tmpDir + '/' + fontName + '/web fonts/' + item, targetPath, function (err) {
 										if (err) return console.error(err)
 										console.log("success!")
 										findRemoveSync(targetPath, {dir: 'specimen_files', extensions: ['.css', '.html']})
@@ -111,7 +120,9 @@ if(fontNameRaw) {
 											if (err) {
 												console.log(err);
 											} else if (css) {
-												fs.appendFile('frontend/styles/base.css', css.substring(css.indexOf('*/') + 3), function (err) {});
+												mkdirp(config.cssDir, function(err) {
+													fs.appendFile(config.cssDir + '/' + config.cssFile, css.substring(css.indexOf('*/') + 3), function (err) {});
+												});
 											} else {
 												// this should never ever happen
 											}
@@ -120,6 +131,7 @@ if(fontNameRaw) {
 								}
 							});
 						});
+						rimraf(config.tmpDir, {}, function() {});
 					});
 			}
 		}

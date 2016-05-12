@@ -14,6 +14,7 @@
     "find-remove": "^0.2.11",
     "fontfacegen": "^0.1.8",
     "fs-extra": "^0.30.0",
+    "mkdirp": "^0.5.1",
     "node-font-face-generator": "^0.1.5",
     "request": "^2.72.0",
     "rimraf": "^2.5.2",
