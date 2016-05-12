@@ -1,5 +1,5 @@
-var install = require('./lib/install');
-var show = require('./lib/show');
+var install = require('./lib/commands/install');
+var show = require('./lib/commands/show');
 
 var commandName = process.argv.slice(2)[0];
 var fontNameArg = process.argv.slice(3)[0];
