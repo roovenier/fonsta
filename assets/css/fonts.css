@@ -550,3 +550,243 @@
 }
 
 
+@font-face {
+  font-family: 'PtsansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot');
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.svg#PtsansBold') format('svg'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot');
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.svg#PtsansItalic') format('svg'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot');
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.svg#PtsansRegular') format('svg'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot');
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.svg#PtsansBold') format('svg'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot');
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.svg#PtsansItalic') format('svg'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot');
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.svg#PtsansRegular') format('svg'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot');
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.svg#PtsansBold') format('svg'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot');
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.svg#PtsansItalic') format('svg'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot');
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.svg#PtsansRegular') format('svg'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot');
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.svg#PtsansBold') format('svg'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot');
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.svg#PtsansRegular') format('svg'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot');
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.svg#PtsansItalic') format('svg'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot');
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.svg#PtsansBold') format('svg'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot');
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.svg#PtsansItalic') format('svg'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot');
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.svg#PtsansRegular') format('svg'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot');
+  src: url('/assets/fonts/PtSans/PtsansBold/Pts75f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.svg#PtsansBold') format('svg'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansBold/Pts75f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot');
+  src: url('/assets/fonts/PtSans/PtsansItalic/Pts56f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.svg#PtsansItalic') format('svg'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansItalic/Pts56f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PtsansRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot');
+  src: url('/assets/fonts/PtSans/PtsansRegular/Pts55f.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.svg#PtsansRegular') format('svg'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.ttf') format('truetype'),
+       url('/assets/fonts/PtSans/PtsansRegular/Pts55f.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'RobotoBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Roboto/RobotoBold/RobotoBold.eot');
+  src: url('/assets/fonts/Roboto/RobotoBold/RobotoBold.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Roboto/RobotoBold/RobotoBold.svg#RobotoBold') format('svg'),
+       url('/assets/fonts/Roboto/RobotoBold/RobotoBold.ttf') format('truetype'),
+       url('/assets/fonts/Roboto/RobotoBold/RobotoBold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'RobotoRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Roboto/RobotoRegular/RobotoRegular.eot');
+  src: url('/assets/fonts/Roboto/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Roboto/RobotoRegular/RobotoRegular.svg#RobotoRegular') format('svg'),
+       url('/assets/fonts/Roboto/RobotoRegular/RobotoRegular.ttf') format('truetype'),
+       url('/assets/fonts/Roboto/RobotoRegular/RobotoRegular.woff') format('woff');
+}
+
+
