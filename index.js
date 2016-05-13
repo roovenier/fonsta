@@ -3,6 +3,7 @@ var program = require('commander');
 var install = require('./lib/commands/install');
 var show = require('./lib/commands/show');
 var uninstall = require('./lib/commands/uninstall');
+var deps = require('./lib/deps');
 
 program
 	.version('0.0.1')
@@ -13,6 +14,7 @@ program
 	.alias('s')
 	.action(function(font) {
 		var fontNameRaw = font.split(':')[0];
+
 		show(fontNameRaw);
 	});
 
@@ -23,12 +25,13 @@ program
 		if(font) {
 			var fontNameRaw = font.split(':')[0];
 			var fontTypes = (font.indexOf(':') > -1) ? font.split(':').pop().split(',') : ['regular'];
+
 			install(fontNameRaw, fontTypes, program.save);
 		} else {
 			var helpers = require('./lib/helpers');
-			var fontstaFonts = require(helpers.rootPath + 'fontsta.json');
-			Object.keys(fontstaFonts.dependencies).forEach(function(key) {
-				install(key, fontstaFonts.dependencies[key], false);
+
+			Object.keys(deps.dependencies).forEach(function(key) {
+				install(key, deps.dependencies[key], false);
 			});
 		}
 	});
@@ -39,6 +42,7 @@ program
 	.action(function(font) {
 		var fontNameRaw = font.split(':')[0];
 		var fontTypes = (font.indexOf(':') > -1) ? font.split(':').pop().split(',') : [];
+		
 		uninstall(fontNameRaw, fontTypes, program.save);
 	});
 

@@ -2,6 +2,13 @@
   "dependencies": {
     "banksia": [
       "regular"
+    ],
+    "roboto": [
+      "bold",
+      "italic"
+    ],
+    "pt-sans": [
+      "bold"
     ]
   }
 }
