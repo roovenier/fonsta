@@ -1,14 +1,21 @@
+var program = require('commander');
+
 var install = require('./lib/commands/install');
 var show = require('./lib/commands/show');
 
-var commandName = process.argv.slice(2)[0];
-var fontNameArg = process.argv.slice(3)[0];
-var fontNameRaw = fontNameArg.split(':')[0];
-var fontTypes = (fontNameArg.indexOf(':') > -1) ? fontNameArg.split(':').pop().split(',') : ['regular'];
+program
+	.version('0.0.1')
+	.option('-s, --save', 'Save to json file')
+	.option('i, install [font]', 'Font for installing', '')
+	.option('s, show [font]', 'Font for showing', '')
+	.parse(process.argv);
 
-if((commandName === 'install' || commandName === 'i') && fontNameRaw) {
-	install(fontNameRaw, fontTypes);
-} else if ((commandName === 'show' || commandName === 's') && fontNameRaw) {
+if(program.install) {
+	var fontNameRaw = program.install.split(':')[0];
+	var fontTypes = (program.install.indexOf(':') > -1) ? program.install.split(':').pop().split(',') : ['regular'];
+	install(fontNameRaw, fontTypes, program.save);
+} else if (program.show) {
+	var fontNameRaw = program.show.split(':')[0];
 	show(fontNameRaw);
 } else {
 	console.log('Unknown command given!');
