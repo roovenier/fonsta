@@ -2,6 +2,7 @@ var program = require('commander');
 
 var install = require('./lib/commands/install');
 var show = require('./lib/commands/show');
+var uninstall = require('./lib/commands/uninstall');
 
 program
 	.version('0.0.1')
@@ -30,6 +31,15 @@ program
 				install(key, fontstaFonts.dependencies[key], false);
 			});
 		}
+	});
+
+program
+	.command('uninstall [font]')
+	.alias('un')
+	.action(function(font) {
+		var fontNameRaw = font.split(':')[0];
+		var fontTypes = (font.indexOf(':') > -1) ? font.split(':').pop().split(',') : [];
+		uninstall(fontNameRaw, fontTypes, program.save);
 	});
 
 program
