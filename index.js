@@ -1,4 +1,5 @@
 var program = require('commander');
+var colors = require('colors');
 
 var install = require('./lib/commands/install');
 var show = require('./lib/commands/show');
@@ -13,9 +14,13 @@ program
 	.command('show [font]')
 	.alias('s')
 	.action(function(font) {
-		var fontNameRaw = font.split(':')[0];
+		if(font) {
+			var fontNameRaw = font.split(':')[0];
 
-		show(fontNameRaw);
+			show(fontNameRaw);
+		} else {
+			console.log('Error: font is not given'.red);
+		}
 	});
 
 program
@@ -28,8 +33,6 @@ program
 
 			install(fontNameRaw, fontTypes, program.save);
 		} else {
-			var helpers = require('./lib/helpers');
-
 			Object.keys(deps.dependencies).forEach(function(key) {
 				install(key, deps.dependencies[key], false);
 			});
@@ -40,16 +43,20 @@ program
 	.command('uninstall [font]')
 	.alias('un')
 	.action(function(font) {
-		var fontNameRaw = font.split(':')[0];
-		var fontTypes = (font.indexOf(':') > -1) ? font.split(':').pop().split(',') : [];
-		
-		uninstall(fontNameRaw, fontTypes, program.save);
+		if(font) {
+			var fontNameRaw = font.split(':')[0];
+			var fontTypes = (font.indexOf(':') > -1) ? font.split(':').pop().split(',') : [];
+
+			uninstall(fontNameRaw, fontTypes, program.save);
+		} else {
+			console.log('Error: font is not given'.red);
+		}
 	});
 
 program
 	.command('*')
 	.action(function() {
-		console.log('Unknown command given!');
+		console.log('Error: unknown command given'.red);
 	});
 
 program.parse(process.argv);

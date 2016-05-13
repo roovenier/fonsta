@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.2",
     "commander": "^2.9.0",
     "download": "^4.4.3",
     "find-remove": "^0.2.11",
