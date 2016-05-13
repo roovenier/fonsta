@@ -1,1 +1,15 @@
-{}
+{
+  "dependencies": {
+    "pt-sans": [
+      "bold",
+      "italic",
+      "regular"
+    ],
+    "roboto": [
+      "regular"
+    ],
+    "lato": [
+      "bold"
+    ]
+  }
+}

@@ -6,17 +6,36 @@ var show = require('./lib/commands/show');
 program
 	.version('0.0.1')
 	.option('-s, --save', 'Save to json file')
-	.option('i, install [font]', 'Font for installing', '')
-	.option('s, show [font]', 'Font for showing', '')
-	.parse(process.argv);
 
-if(program.install) {
-	var fontNameRaw = program.install.split(':')[0];
-	var fontTypes = (program.install.indexOf(':') > -1) ? program.install.split(':').pop().split(',') : ['regular'];
-	install(fontNameRaw, fontTypes, program.save);
-} else if (program.show) {
-	var fontNameRaw = program.show.split(':')[0];
-	show(fontNameRaw);
-} else {
-	console.log('Unknown command given!');
-}
+program
+	.command('show [font]')
+	.alias('s')
+	.action(function(font) {
+		var fontNameRaw = font.split(':')[0];
+		show(fontNameRaw);
+	});
+
+program
+	.command('install [font]')
+	.alias('i')
+	.action(function(font) {
+		if(font) {
+			var fontNameRaw = font.split(':')[0];
+			var fontTypes = (font.indexOf(':') > -1) ? font.split(':').pop().split(',') : ['regular'];
+			install(fontNameRaw, fontTypes, program.save);
+		} else {
+			var helpers = require('./lib/helpers');
+			var fontstaFonts = require(helpers.rootPath + 'fontsta.json');
+			Object.keys(fontstaFonts.dependencies).forEach(function(key) {
+				install(key, fontstaFonts.dependencies[key], false);
+			});
+		}
+	});
+
+program
+	.command('*')
+	.action(function() {
+		console.log('Unknown command given!');
+	});
+
+program.parse(process.argv);
