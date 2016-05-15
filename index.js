@@ -33,8 +33,8 @@ program
 
 			install(fontNameRaw, fontTypes, program.save);
 		} else {
-			Object.keys(deps.dependencies).forEach(function(key) {
-				install(key, deps.dependencies[key], false);
+			Object.keys(deps).forEach(function(key) {
+				install(key, deps[key], false);
 			});
 		}
 	});
