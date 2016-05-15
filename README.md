@@ -1,7 +1,6 @@
 # Fonsta: add fonts to your project
 
-Fonsta allows you take and use fonts in easy way because it works as a package manager, like Bower or npm.
-The package interacts with [Font Squirrel](https://www.fontsquirrel.com/) and gets fonts directly from there.
+Fonsta allows you take and use fonts in easy way because it works as a package manager, like Bower or npm. The package interacts with [Font Squirrel](https://www.fontsquirrel.com/) and gets fonts directly from there.
 
 ## Install
 
@@ -58,6 +57,9 @@ Fonsta can be configured by a `fonsta.config.json` file. For example:
 ```
 
 `tmpDir` - temporary directory which stores downloaded fonts (cleaned after installation)
+
 `fontsDir` - directory which stores resulting fonts
+
 `cssDir` - directory which stores generated css file
+
 `cssFile` - name for css file where will be included generated @font-face
