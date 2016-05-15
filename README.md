@@ -1,6 +1,6 @@
 # Fonsta: add fonts to your project
 
-Fonsta allows you take and use fonts in easy way because it works as a package manager, like Bower or npm. The package interacts with [Font Squirrel](https://www.fontsquirrel.com/) and gets fonts directly from there.
+Fonsta allows you to take and use fonts simply, because it works as a package manager like Bower or npm. The package interacts with [Font Squirrel](https://www.fontsquirrel.com/) and gets fonts directly from there.
 
 ## Install
 
