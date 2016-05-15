@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chmodr": "^1.0.2",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "download": "^4.4.3",

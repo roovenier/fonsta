@@ -2,12 +2,6 @@
   "dependencies": {
     "pt-sans": [
       "regular"
-    ],
-    "roboto": [
-      "black",
-      "bold",
-      "italic",
-      "thin"
     ]
   }
 }
