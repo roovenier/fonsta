@@ -1,0 +1,37 @@
+{
+  "name": "fonsta",
+  "version": "1.0.0",
+  "description": "Web fonts package manager",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roovenier/fonsta.git"
+  },
+  "main": "lib",
+  "bin": "bin/fonsta",
+  "author": "Alexander Os <fastex93@gmail.com> (http://github.com/roovenier)",
+  "license": "MIT",
+  "homepage": "https://github.com/roovenier/fonsta",
+  "keywords": [
+    "fonts",
+    "fonsta",
+    "fonts manager",
+    "font face",
+    "font face generator",
+    "web fonts",
+    "web fonts generator",
+    "fontsquirrel",
+  ],
+  "dependencies": {
+    "chmodr": "^1.0.2",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "download": "^4.4.3",
+    "find-remove": "^0.2.11",
+    "fs-extra": "^0.30.0",
+    "mkdirp": "^0.5.1",
+    "node-font-face-generator": "^0.1.5",
+    "object-assign": "^4.1.0",
+    "request": "^2.72.0",
+    "rimraf": "^2.5.2"
+  }
+}
