@@ -1,0 +1,7 @@
+/node_modules
+/npm-debug.log
+
+/assets
+/tmp
+/fonsta.deps.json
+/fonsta.config.json
