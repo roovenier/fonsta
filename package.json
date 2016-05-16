@@ -19,7 +19,7 @@
     "font face generator",
     "web fonts",
     "web fonts generator",
-    "fontsquirrel",
+    "fontsquirrel"
   ],
   "dependencies": {
     "chmodr": "^1.0.2",
