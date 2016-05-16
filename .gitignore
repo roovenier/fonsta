@@ -1,6 +1,7 @@
-*.log
-.DS_Store
-node_modules/
-*.sublime-workspace
-assets/fonts
-tmp/fonts
+/node_modules
+/npm-debug.log
+
+/assets
+/tmp
+/fonsta.deps.json
+/fonsta.config.json
