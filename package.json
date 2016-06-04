@@ -1,6 +1,6 @@
 {
   "name": "fonsta",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web fonts package manager",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "homepage": "https://github.com/roovenier/fonsta",
   "keywords": [
+    "font",
     "fonts",
     "fonsta",
     "fonts manager",
@@ -19,7 +20,10 @@
     "font face generator",
     "web fonts",
     "web fonts generator",
-    "fontsquirrel"
+    "font squirrel",
+    "fontsquirrel",
+	"install fonts",
+	"get fonts"
   ],
   "dependencies": {
     "chmodr": "^1.0.2",
