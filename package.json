@@ -30,6 +30,7 @@
   ],
   "dependencies": {
     "chmodr": "^1.0.2",
+    "cli-spinner": "^0.2.5",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "download": "^4.4.3",
@@ -38,7 +39,6 @@
     "mkdirp": "^0.5.1",
     "node-font-face-generator": "^0.1.5",
     "object-assign": "^4.1.0",
-    "pretty-error": "^2.0.0",
     "request": "^2.72.0",
     "rimraf": "^2.5.2"
   },
