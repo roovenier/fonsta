@@ -2,9 +2,7 @@ var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
 
-var should = chai.should();
 var expect = chai.expect;
-var assert = chai.assert;
 
 var show = require('../lib/commands/show');
 
@@ -18,14 +16,12 @@ describe('Show font command', function() {
 			});
 		};
 
-		it('should be an array because given font is exist', function() {
-			var fontName = 'Roboto';
-			return expect(promiseShow(fontName)).to.eventually.be.an('array');
+		it('should be an array because given font exists', function() {
+			return expect(promiseShow('Roboto')).to.eventually.be.an('array');
 		});
 
-		it('should be an error because given font isn\'t exist', function() {
-			var fontName = 'fontisnotexist';
-			return expect(promiseShow(fontName)).to.eventually.be.an('error');
+		it('should be the error because given font doesn\'t exist', function() {
+			return expect(promiseShow('fontisnotexist')).to.eventually.be.an('error');
 		});
 	});
 });

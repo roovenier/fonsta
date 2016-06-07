@@ -12,7 +12,9 @@
   "license": "MIT",
   "homepage": "https://github.com/roovenier/fonsta",
   "scripts": {
-    "test": "mocha test/* --timeout 15000 || true"
+    "test": "mocha test/* --timeout 15000 || true",
+    "test:show": "mocha test/show.js --timeout 15000 || true",
+    "test:install": "mocha test/install.js --timeout 15000 || true"
   },
   "keywords": [
     "font",
