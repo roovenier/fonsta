@@ -1,10 +1,23 @@
+var mkdirp = require('mkdirp');
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
-
 var expect = chai.expect;
 
 var install = require('../lib/commands/install');
+
+var rimraf = require('../lib/utils/rimraf');
+var helpers = require('../lib/utils/helpers');
+
+beforeEach(function(done) {
+	rimraf(helpers.paths.testAssets, function() {
+		mkdirp(helpers.paths.testAssets, done);
+	});
+});
+
+after(function(done) {
+	rimraf(helpers.paths.testAssets, done);
+});
 
 describe('Install font command', function() {
 	var promiseInstall = function(fontNameRaw, fontTypes, isSave, isTesting) {
@@ -39,7 +52,7 @@ describe('Install font command', function() {
 		});
 
 		it('should be the success message because given font with at least one style exists', function() {
-			return expect(promiseInstall('Roboto', ['undefinedstyle', 'medium', 'aaabbbccc'], true, true)).to.eventually.be.an('string');
+			return expect(promiseInstall('Roboto', ['undefinedstyle', 'medium', 'aaabbbccc', 'light'], true, true)).to.eventually.be.an('string');
 		});
 
 		it('should be the error because given font with styles doesn\'t exist', function() {
