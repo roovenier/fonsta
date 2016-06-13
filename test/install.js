@@ -15,10 +15,6 @@ beforeEach(function(done) {
 	});
 });
 
-after(function(done) {
-	rimraf(helpers.paths.testAssets, done);
-});
-
 describe('Install font command', function() {
 	var promiseInstall = function(fontNameRaw, fontTypes, isSave, isTesting) {
 		return install(fontNameRaw, fontTypes, isSave, isTesting).then(function(result) {
