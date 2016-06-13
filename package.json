@@ -1,6 +1,6 @@
 {
   "name": "fonsta",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web fonts package manager",
   "repository": {
     "type": "git",
@@ -11,6 +11,12 @@
   "author": "Alexander Os <fastex93@gmail.com> (http://github.com/roovenier)",
   "license": "MIT",
   "homepage": "https://github.com/roovenier/fonsta",
+  "scripts": {
+    "test": "mocha test/*.js --timeout 50000 || true",
+    "test:show": "mocha test/show.js --timeout 30000 || true",
+    "test:install": "mocha test/install.js --timeout 30000 || true",
+    "test:uninstall": "mocha test/uninstall.js --timeout 50000 || true"
+  },
   "keywords": [
     "font",
     "fonts",
@@ -22,11 +28,12 @@
     "web fonts generator",
     "font squirrel",
     "fontsquirrel",
-	"install fonts",
-	"get fonts"
+    "install fonts",
+    "get fonts"
   ],
   "dependencies": {
     "chmodr": "^1.0.2",
+    "cli-spinner": "^0.2.5",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "download": "^4.4.3",
@@ -37,5 +44,10 @@
     "object-assign": "^4.1.0",
     "request": "^2.72.0",
     "rimraf": "^2.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.5.3"
   }
 }
