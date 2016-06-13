@@ -2,6 +2,7 @@
 /npm-debug.log
 
 /assets
+/test/assets
 /tmp
 /fonsta.deps.json
 /fonsta.config.json
