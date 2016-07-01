@@ -1,6 +1,6 @@
 {
   "name": "fonsta",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Web fonts package manager",
   "repository": {
     "type": "git",
@@ -41,7 +41,6 @@
     "fs-extra": "^0.30.0",
     "mkdirp": "^0.5.1",
     "node-font-face-generator": "0.1.5",
-    "object-assign": "^4.1.0",
     "request": "^2.72.0",
     "rimraf": "^2.5.2"
   },
