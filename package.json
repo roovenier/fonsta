@@ -1,6 +1,6 @@
 {
   "name": "fonsta",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Web fonts package manager",
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "download": "^4.4.3",
+    "es6-promise": "^3.2.1",
     "find-remove": "^0.2.11",
     "fs-extra": "^0.30.0",
     "mkdirp": "^0.5.1",
