@@ -2,6 +2,8 @@
 
 Fonsta allows you to take and use fonts simply, because it works as a package manager like Bower or npm. The package interacts with [Font Squirrel](https://www.fontsquirrel.com/) and gets fonts directly from there.
 
+[![Build Status](https://travis-ci.org/roovenier/fonsta.svg?branch=master)](https://travis-ci.org/roovenier/fonsta) [![npm version](https://badge.fury.io/js/fonsta.svg)](https://www.npmjs.com/package/fonsta)
+
 ## Install
 
 ```sh
