@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "6"
   - "0.12.7"
-  - "0.10.20"
+  - "0.10.25"
   - "iojs"
 before_script: npm install -g fonsta
 install: npm install
