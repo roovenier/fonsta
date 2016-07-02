@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "6"
+  - "0.12.7"
+  - "0.10.20"
+  - "iojs"
+before_script: npm install -g fonsta
+install: npm install
+script:
+  - fonsta install roboto:bold,somestyle,italic --save
+  - fonsta uninstall roboto
+  - fonsta show roboto
+  - npm run test
