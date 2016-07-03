@@ -1,4 +1,4 @@
-var mkdirp = require('mkdirp');
+var fs = require('fs');
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
@@ -11,7 +11,7 @@ var helpers = require('../lib/utils/helpers');
 
 beforeEach(function(done) {
 	rimraf(helpers.paths.testAssets, function() {
-		mkdirp(helpers.paths.testAssets, done);
+		fs.mkdir(helpers.paths.testAssets, 0744, done);
 	});
 });
 
