@@ -8,7 +8,7 @@
   },
   "main": "lib",
   "bin": "bin/fonsta",
-  "author": "Alexander Os <fastex93@gmail.com> (http://github.com/roovenier)",
+  "author": "Alex Oshchepkov <fastex93@gmail.com> (http://github.com/roovenier)",
   "license": "MIT",
   "homepage": "https://github.com/roovenier/fonsta",
   "scripts": {
