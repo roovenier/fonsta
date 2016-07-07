@@ -11,6 +11,7 @@
   "author": "Alex Oshchepkov <fastex93@gmail.com> (http://github.com/roovenier)",
   "license": "MIT",
   "homepage": "https://github.com/roovenier/fonsta",
+  "engines" : { "node" : ">=0.10.20" },
   "scripts": {
     "test": "mocha test/*.js --timeout 50000 || true",
     "test:show": "mocha test/show.js --timeout 30000 || true",
@@ -47,6 +48,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "object-assign": "^4.1.0"
   }
 }
