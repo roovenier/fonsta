@@ -1,3 +1,4 @@
+var Promise = require('es6-promise').Promise;
 var mkdirp = require('mkdirp');
 var chai = require("chai");
 var chaiAsPromised = require("chai-as-promised");
@@ -21,7 +22,7 @@ describe('Uninstall font command', function() {
 	var promiseUninstall = function(installFont, uninstallFont) {
 		this.install = function() {
 			return new Promise(function(resolve, reject) {
-				install(installFont.font, installFont.fontStyles, false, true).then(function(res) {
+				install(installFont.font, installFont.fontStyles, {isSave: false, noCss: false}, true).then(function(res) {
 					resolve();
 				});
 			});
