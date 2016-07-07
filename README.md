@@ -23,6 +23,9 @@ $ fonsta install <font> --save
 
 # install a font with specific styles and add it to fonsta.deps.json
 $ bower install <font>:<style>,<style>,<style> --save
+
+# install a font without generating css file
+$ fonsta install <font> --nocss
 ```
 
 ### Using fonts
